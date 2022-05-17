@@ -1,0 +1,18 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tencent.liteav.demo.common" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="23"
+6-->D:\android_project\newJelly\jelly\common\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="30" />
+7-->D:\android_project\newJelly\jelly\common\src\main\AndroidManifest.xml
+8
+9    <application>
+9-->D:\android_project\newJelly\jelly\common\src\main\AndroidManifest.xml:4:5-6:19
+10        <activity android:name="com.tencent.liteav.demo.common.QRCodeScanActivity" />
+10-->D:\android_project\newJelly\jelly\common\src\main\AndroidManifest.xml:5:9-56
+10-->D:\android_project\newJelly\jelly\common\src\main\AndroidManifest.xml:5:19-53
+11    </application>
+12
+13</manifest>

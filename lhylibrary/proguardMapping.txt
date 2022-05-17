@@ -1,0 +1,444 @@
+# compiler: R8
+# compiler_version: 3.1.66
+# pg_map_id: bf39097
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"1.0"}
+com.alibaba.android.arouter.routes.ARouter$$Group$$lhyLibrary -> com.alibaba.android.arouter.routes.ARouter$$Group$$lhyLibrary:
+# {"id":"sourceFile","fileName":"ARouter$$Group$$lhyLibrary.java"}
+    13:13:void <init>() -> <init>
+    16:17:void loadInto(java.util.Map) -> loadInto
+com.alibaba.android.arouter.routes.ARouter$$Providers$$lhylibrary -> com.alibaba.android.arouter.routes.ARouter$$Providers$$lhylibrary:
+# {"id":"sourceFile","fileName":"ARouter$$Providers$$lhylibrary.java"}
+    13:13:void <init>() -> <init>
+    16:17:void loadInto(java.util.Map) -> loadInto
+com.alibaba.android.arouter.routes.ARouter$$Root$$lhylibrary -> com.alibaba.android.arouter.routes.ARouter$$Root$$lhylibrary:
+# {"id":"sourceFile","fileName":"ARouter$$Root$$lhylibrary.java"}
+    12:12:void <init>() -> <init>
+    15:16:void loadInto(java.util.Map) -> loadInto
+lhy.library.activity.OnePixelActivity -> lhy.library.activity.OnePixelActivity:
+    20:20:void <init>() -> <init>
+    24:36:void onCreate(android.os.Bundle) -> onCreate
+    40:41:void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+lhy.library.activity.ShowPhotoActivity -> lhy.library.activity.ShowPhotoActivity:
+    android.widget.TextView mTextPosition -> b
+    androidx.viewpager.widget.ViewPager mViewPager -> a
+    int mCurrentPosition -> d
+    java.util.ArrayList mList -> c
+    34:34:void <init>() -> <init>
+    34:34:void access$000(lhy.library.activity.ShowPhotoActivity,int) -> a
+    97:98:void setTextPosition(int) -> a
+    58:69:void initData() -> b
+    72:93:void initView() -> c
+    48:55:void onCreate(android.os.Bundle) -> onCreate
+lhy.library.activity.ShowPhotoActivity$1 -> lhy.library.activity.ShowPhotoActivity$a:
+    lhy.library.activity.ShowPhotoActivity this$0 -> a
+    75:75:void <init>(lhy.library.activity.ShowPhotoActivity) -> <init>
+    89:89:void onPageScrollStateChanged(int) -> onPageScrollStateChanged
+    79:79:void onPageScrolled(int,float,int) -> onPageScrolled
+    83:84:void onPageSelected(int) -> onPageSelected
+lhy.library.activity.ShowPhotoActivity$PhotoAdapter -> lhy.library.activity.ShowPhotoActivity$b:
+    java.util.List mData -> a
+    lhy.library.activity.ShowPhotoActivity this$0 -> c
+    android.app.Activity activity -> b
+    105:108:void <init>(lhy.library.activity.ShowPhotoActivity,android.app.Activity,java.util.List) -> <init>
+    100:100:android.app.Activity access$100(lhy.library.activity.ShowPhotoActivity$PhotoAdapter) -> a
+    122:131:android.view.View instantiateItem(android.view.ViewGroup,int) -> a
+    136:137:void destroyItem(android.view.ViewGroup,int,java.lang.Object) -> destroyItem
+    112:112:int getCount() -> getCount
+    100:100:java.lang.Object instantiateItem(android.view.ViewGroup,int) -> instantiateItem
+    117:117:boolean isViewFromObject(android.view.View,java.lang.Object) -> isViewFromObject
+lhy.library.activity.ShowPhotoActivity$PhotoAdapter$1 -> lhy.library.activity.ShowPhotoActivity$b$a:
+    lhy.library.activity.ShowPhotoActivity$PhotoAdapter this$1 -> a
+    124:124:void <init>(lhy.library.activity.ShowPhotoActivity$PhotoAdapter) -> <init>
+    127:128:void onClick(android.view.View) -> onClick
+lhy.library.adapter.MultiSelectAdapter -> lhy.library.adapter.MultiSelectAdapter:
+    java.util.Map mSelectedMap -> a
+    22:26:void <init>() -> <init>
+    20:20:java.util.Map access$000(lhy.library.adapter.MultiSelectAdapter) -> a
+    30:49:void convert(com.chad.library.adapter.base.viewholder.BaseViewHolder,java.lang.String) -> a
+    20:20:void convert(com.chad.library.adapter.base.viewholder.BaseViewHolder,java.lang.Object) -> convert
+lhy.library.adapter.MultiSelectAdapter$1 -> lhy.library.adapter.MultiSelectAdapter$a:
+    lhy.library.adapter.MultiSelectAdapter this$0 -> c
+    android.widget.CheckBox val$checkBox -> a
+    int val$itemPosition -> b
+    34:34:void <init>(lhy.library.adapter.MultiSelectAdapter,android.widget.CheckBox,int) -> <init>
+    37:46:void onClick(android.view.View) -> onClick
+lhy.library.adapter.SingleSelectAdapter -> lhy.library.adapter.SingleSelectAdapter:
+    boolean mustSelect -> b
+    int mPosition -> a
+    16:21:void <init>() -> <init>
+    30:43:void convert(com.chad.library.adapter.base.viewholder.BaseViewHolder,java.lang.String) -> a
+    34:42:void lambda$convert$0(int,android.view.View) -> a
+    46:50:void setSelectedPosition(int) -> a
+    14:14:void convert(com.chad.library.adapter.base.viewholder.BaseViewHolder,java.lang.Object) -> convert
+lhy.library.base.ActivityUtils -> a.a:
+    java.util.List activities -> a
+    16:16:void <clinit>() -> <clinit>
+    14:14:java.util.List access$000() -> a
+    19:56:void init(android.app.Application) -> a
+lhy.library.base.ActivityUtils$1 -> a.a$a:
+    19:19:void <init>() -> <init>
+    22:23:void onActivityCreated(android.app.Activity,android.os.Bundle) -> onActivityCreated
+    52:53:void onActivityDestroyed(android.app.Activity) -> onActivityDestroyed
+    38:38:void onActivityPaused(android.app.Activity) -> onActivityPaused
+    33:33:void onActivityResumed(android.app.Activity) -> onActivityResumed
+    48:48:void onActivitySaveInstanceState(android.app.Activity,android.os.Bundle) -> onActivitySaveInstanceState
+    28:28:void onActivityStarted(android.app.Activity) -> onActivityStarted
+    43:43:void onActivityStopped(android.app.Activity) -> onActivityStopped
+lhy.library.base.LhyActivity -> lhy.library.base.LhyActivity:
+    20:20:void <init>() -> <init>
+    42:43:void setStatusBar() -> a
+    26:27:void onCreate(android.os.Bundle) -> onCreate
+    47:48:void onDestroy() -> onDestroy
+    31:33:void setContentView(int) -> setContentView
+    37:39:void setContentView(android.view.View) -> setContentView
+lhy.library.base.LhyApplication -> lhy.library.base.LhyApplication:
+    lhy.library.base.LhyApplication instance -> a
+    18:18:void <init>() -> <init>
+    66:66:android.content.Context getContext() -> a
+    57:59:void attachBaseContext(android.content.Context) -> attachBaseContext
+    33:38:void initARoute() -> b
+    41:53:void initLogger() -> c
+    boolean isDebug() -> d
+    24:30:void onCreate() -> onCreate
+lhy.library.base.LhyApplication$1 -> lhy.library.base.LhyApplication$a:
+    lhy.library.base.LhyApplication this$0 -> a
+    47:47:void <init>(lhy.library.base.LhyApplication,com.orhanobut.logger.FormatStrategy) -> <init>
+    50:50:boolean isLoggable(int,java.lang.String) -> isLoggable
+lhy.library.http.exception.AppCrashException -> b.a:
+    java.lang.String DIR_CRASH -> a
+    lhy.library.http.exception.AppCrashException INSTANCE -> b
+    29:30:void <clinit>() -> <clinit>
+    26:26:void <init>() -> <init>
+    26:26:java.lang.String access$000(lhy.library.http.exception.AppCrashException,java.lang.Throwable) -> a
+    26:26:void access$100(lhy.library.http.exception.AppCrashException,java.lang.String) -> a
+    34:35:void init() -> a
+    54:60:java.lang.String getStringException(java.lang.Throwable) -> a
+    64:77:void writeString2File(java.lang.String) -> a
+    39:51:void uncaughtException(java.lang.Thread,java.lang.Throwable) -> uncaughtException
+lhy.library.http.exception.AppCrashException$1 -> b.a$a:
+    java.lang.Throwable val$ex -> a
+    lhy.library.http.exception.AppCrashException this$0 -> b
+    41:41:void <init>(lhy.library.http.exception.AppCrashException,java.lang.Throwable) -> <init>
+    44:46:void subscribe(io.reactivex.rxjava3.core.ObservableEmitter) -> subscribe
+lhy.library.service.AliveService -> lhy.library.service.AliveService:
+    lhy.library.utils.ScreenReceiveUtils mScreenReceiveUtils -> a
+    lhy.library.utils.ScreenManager mScreenManager -> b
+    23:23:void <init>() -> <init>
+    62:62:void onUserPresent() -> a
+    51:52:void onScreenOn() -> b
+    56:57:void onScreenOff() -> c
+    45:47:void onDestroy() -> onDestroy
+    31:40:int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+lhy.library.service.AliveService$InnerService -> lhy.library.service.AliveService$InnerService:
+    64:64:void <init>() -> <init>
+    69:69:android.os.IBinder onBind(android.content.Intent) -> onBind
+    74:86:int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+lhy.library.service.AliveService$InnerService$1 -> lhy.library.service.AliveService$InnerService$a:
+    lhy.library.service.AliveService$InnerService this$0 -> a
+    78:78:void <init>(lhy.library.service.AliveService$InnerService) -> <init>
+    81:84:void run() -> run
+lhy.library.utils.DateUtils -> c.a:
+    20:20:java.lang.String getTime() -> a
+lhy.library.utils.FileUtils -> c.b:
+    19:19:boolean isSDCardEnabled() -> a
+lhy.library.utils.JsonServiceImpl -> c.c:
+    12:12:void <init>() -> <init>
+    17:17:void init(android.content.Context) -> init
+    21:21:java.lang.Object json2Object(java.lang.String,java.lang.Class) -> json2Object
+    26:26:java.lang.String object2Json(java.lang.Object) -> object2Json
+    31:31:java.lang.Object parseObject(java.lang.String,java.lang.reflect.Type) -> parseObject
+lhy.library.utils.ScreenManager -> c.d:
+    android.content.Context mContext -> a
+    java.lang.ref.WeakReference mActivityRef -> b
+    lhy.library.utils.ScreenManager mScreenManager -> c
+    24:26:void <init>(android.content.Context) -> <init>
+    29:32:lhy.library.utils.ScreenManager getScreenManagerInstance(android.content.Context) -> a
+    36:37:void setSingleActivity(android.app.Activity) -> a
+    48:55:void finishActivity() -> a
+    40:44:void startActivity() -> b
+lhy.library.utils.ScreenReceiveUtils -> lhy.library.utils.ScreenReceiveUtils:
+    android.content.Context mContext -> a
+    lhy.library.utils.ScreenReceiveUtils$ScreenBroadcastReceiver mScreenReceiver -> b
+    lhy.library.utils.ScreenReceiveUtils$ScreenStateListener mStateReceiverListener -> c
+    26:28:void <init>(android.content.Context) -> <init>
+    18:18:lhy.library.utils.ScreenReceiveUtils$ScreenStateListener access$000(lhy.library.utils.ScreenReceiveUtils) -> a
+    32:40:void setScreenReceiverListener(lhy.library.utils.ScreenReceiveUtils$ScreenStateListener) -> a
+    43:44:void stopScreenReceiverListener() -> a
+lhy.library.utils.ScreenReceiveUtils$ScreenBroadcastReceiver -> lhy.library.utils.ScreenReceiveUtils$ScreenBroadcastReceiver:
+    lhy.library.utils.ScreenReceiveUtils this$0 -> a
+    46:46:void <init>(lhy.library.utils.ScreenReceiveUtils) -> <init>
+    49:61:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+lhy.library.utils.ScreenReceiveUtils$ScreenStateListener -> lhy.library.utils.ScreenReceiveUtils$a:
+    void onUserPresent() -> a
+    void onScreenOn() -> b
+    void onScreenOff() -> c
+lhy.library.utils.StatusBarUtil -> lhy.library.utils.StatusBarUtil:
+    29:30:void setColor(android.app.Activity,int) -> a
+    515:520:lhy.library.utils.StatusBarUtil$StatusBarView createStatusBarView(android.app.Activity,int,int) -> a
+    527:535:void setRootView(android.app.Activity) -> a
+    591:592:int getStatusBarHeight(android.content.Context) -> a
+    603:610:int calculateStatusColor(int,int) -> a
+    41:57:void setColor(android.app.Activity,int,int) -> b
+lhy.library.utils.StatusBarUtil$StatusBarView -> lhy.library.utils.StatusBarUtil$StatusBarView:
+    621:622:void <init>(android.content.Context,android.util.AttributeSet) -> <init>
+    625:626:void <init>(android.content.Context) -> <init>
+lhy.library.utils.ToastUtils -> c.e:
+    17:20:void show(java.lang.String) -> a
+lhy.library.view.SideLetterBar -> lhy.library.view.SideLetterBar:
+    lhy.library.view.SideLetterBar$OnLetterChangedListener onLetterChangedListener -> d
+    android.widget.TextView overlay -> e
+    android.graphics.Paint paint -> b
+    java.lang.String[] b -> f
+    boolean showBg -> c
+    int choose -> a
+    16:16:void <clinit>() -> <clinit>
+    18:26:void <init>(android.content.Context,android.util.AttributeSet,int) -> <init>
+    18:30:void <init>(android.content.Context,android.util.AttributeSet) -> <init>
+    18:34:void <init>(android.content.Context) -> <init>
+    73:117:boolean dispatchTouchEvent(android.view.MotionEvent) -> dispatchTouchEvent
+    47:69:void onDraw(android.graphics.Canvas) -> onDraw
+    122:122:boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    126:127:void setOnLetterChangedListener(lhy.library.view.SideLetterBar$OnLetterChangedListener) -> setOnLetterChangedListener
+    41:42:void setOverlay(android.widget.TextView) -> setOverlay
+lhy.library.view.SideLetterBar$OnLetterChangedListener -> lhy.library.view.SideLetterBar$a:
+    void onLetterChanged(java.lang.String) -> a
+lhy.library.view.photoView.Compat -> d.a:
+    28:33:void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+    37:38:void postOnAnimationJellyBean(android.view.View,java.lang.Runnable) -> b
+lhy.library.view.photoView.CustomGestureDetector -> d.b:
+    float mMinimumVelocity -> i
+    float mTouchSlop -> h
+    float mLastTouchY -> g
+    float mLastTouchX -> f
+    boolean mIsDragging -> e
+    lhy.library.view.photoView.OnGestureListener mListener -> j
+    int mActivePointerIndex -> b
+    android.view.ScaleGestureDetector mDetector -> c
+    android.view.VelocityTracker mVelocityTracker -> d
+    int mActivePointerId -> a
+    31:75:void <init>(android.content.Context,lhy.library.view.photoView.OnGestureListener) -> <init>
+    27:27:lhy.library.view.photoView.OnGestureListener access$000(lhy.library.view.photoView.CustomGestureDetector) -> a
+    79:81:float getActiveX(android.view.MotionEvent) -> a
+    98:98:boolean isDragging() -> a
+    87:89:float getActiveY(android.view.MotionEvent) -> b
+    94:94:boolean isScaling() -> b
+    103:107:boolean onTouchEvent(android.view.MotionEvent) -> c
+    112:201:boolean processTouchEvent(android.view.MotionEvent) -> d
+lhy.library.view.photoView.CustomGestureDetector$1 -> d.b$a:
+    lhy.library.view.photoView.CustomGestureDetector this$0 -> a
+    50:50:void <init>(lhy.library.view.photoView.CustomGestureDetector) -> <init>
+    54:61:boolean onScale(android.view.ScaleGestureDetector) -> onScale
+    66:66:boolean onScaleBegin(android.view.ScaleGestureDetector) -> onScaleBegin
+    72:72:void onScaleEnd(android.view.ScaleGestureDetector) -> onScaleEnd
+lhy.library.view.photoView.OnGestureListener -> d.c:
+    void onDrag(float,float) -> a
+    void onFling(float,float,float,float) -> a
+    void onScale(float,float,float) -> a
+lhy.library.view.photoView.OnMatrixChangedListener -> d.d:
+    void onMatrixChanged(android.graphics.RectF) -> a
+lhy.library.view.photoView.OnOutsidePhotoTapListener -> d.e:
+    void onOutsidePhotoTap(android.widget.ImageView) -> a
+lhy.library.view.photoView.OnPhotoTapListener -> d.f:
+    void onPhotoTap(android.widget.ImageView,float,float) -> a
+lhy.library.view.photoView.OnScaleChangedListener -> d.g:
+    void onScaleChange(float,float,float) -> a
+lhy.library.view.photoView.OnSingleFlingListener -> d.h:
+lhy.library.view.photoView.OnViewDragListener -> d.i:
+    void onDrag(float,float) -> a
+lhy.library.view.photoView.OnViewTapListener -> d.j:
+    void onViewTap(android.view.View,float,float) -> a
+lhy.library.view.photoView.PhotoView -> lhy.library.view.photoView.PhotoView:
+    android.widget.ImageView$ScaleType pendingScaleType -> b
+    lhy.library.view.photoView.PhotoViewAttacher attacher -> a
+    38:39:void <init>(android.content.Context) -> <init>
+    42:43:void <init>(android.content.Context,android.util.AttributeSet) -> <init>
+    46:48:void <init>(android.content.Context,android.util.AttributeSet,int) -> <init>
+    52:54:void <init>(android.content.Context,android.util.AttributeSet,int,int) -> <init>
+    57:66:void init() -> a
+    76:76:lhy.library.view.photoView.PhotoViewAttacher getAttacher() -> getAttacher
+    164:164:android.graphics.RectF getDisplayRect() -> getDisplayRect
+    86:86:android.graphics.Matrix getImageMatrix() -> getImageMatrix
+    192:192:float getMaximumScale() -> getMaximumScale
+    188:188:float getMediumScale() -> getMediumScale
+    184:184:float getMinimumScale() -> getMinimumScale
+    196:196:float getScale() -> getScale
+    81:81:android.widget.ImageView$ScaleType getScaleType() -> getScaleType
+    200:201:void setAllowParentInterceptOnEdge(boolean) -> setAllowParentInterceptOnEdge
+    135:139:boolean setFrame(int,int,int,int) -> setFrame
+    110:115:void setImageDrawable(android.graphics.drawable.Drawable) -> setImageDrawable
+    119:123:void setImageResource(int) -> setImageResource
+    127:131:void setImageURI(android.net.Uri) -> setImageURI
+    212:213:void setMaximumScale(float) -> setMaximumScale
+    208:209:void setMediumScale(float) -> setMediumScale
+    204:205:void setMinimumScale(float) -> setMinimumScale
+    96:97:void setOnClickListener(android.view.View$OnClickListener) -> setOnClickListener
+    256:257:void setOnDoubleTapListener(android.view.GestureDetector$OnDoubleTapListener) -> setOnDoubleTapListener
+    91:92:void setOnLongClickListener(android.view.View$OnLongClickListener) -> setOnLongClickListener
+    220:221:void setOnMatrixChangeListener(lhy.library.view.photoView.OnMatrixChangedListener) -> setOnMatrixChangeListener
+    228:229:void setOnOutsidePhotoTapListener(lhy.library.view.photoView.OnOutsidePhotoTapListener) -> setOnOutsidePhotoTapListener
+    224:225:void setOnPhotoTapListener(lhy.library.view.photoView.OnPhotoTapListener) -> setOnPhotoTapListener
+    260:261:void setOnScaleChangeListener(lhy.library.view.photoView.OnScaleChangedListener) -> setOnScaleChangeListener
+    264:265:void setOnSingleFlingListener(lhy.library.view.photoView.OnSingleFlingListener) -> setOnSingleFlingListener
+    236:237:void setOnViewDragListener(lhy.library.view.photoView.OnViewDragListener) -> setOnViewDragListener
+    232:233:void setOnViewTapListener(lhy.library.view.photoView.OnViewTapListener) -> setOnViewTapListener
+    147:148:void setRotationBy(float) -> setRotationBy
+    143:144:void setRotationTo(float) -> setRotationTo
+    240:241:void setScale(float) -> setScale
+    101:106:void setScaleType(android.widget.ImageView$ScaleType) -> setScaleType
+    252:253:void setZoomTransitionDuration(int) -> setZoomTransitionDuration
+    160:161:void setZoomable(boolean) -> setZoomable
+lhy.library.view.photoView.PhotoViewAttacher -> d.k:
+    lhy.library.view.photoView.OnOutsidePhotoTapListener mOutsidePhotoTapListener -> r
+    android.widget.ImageView$ScaleType mScaleType -> C
+    lhy.library.view.photoView.OnViewTapListener mViewTapListener -> s
+    android.graphics.Matrix mDrawMatrix -> l
+    float DEFAULT_MID_SCALE -> F
+    float mMaxScale -> e
+    int SINGLE_TOUCH -> I
+    float mMinScale -> c
+    lhy.library.view.photoView.OnViewDragListener mOnViewDragListener -> x
+    int mZoomDuration -> b
+    lhy.library.view.photoView.CustomGestureDetector mScaleDragDetector -> j
+    android.graphics.RectF mDisplayRect -> n
+    boolean mAllowParentInterceptOnEdge -> f
+    lhy.library.view.photoView.OnMatrixChangedListener mMatrixChangeListener -> p
+    android.view.View$OnClickListener mOnClickListener -> t
+    android.view.View$OnLongClickListener mLongClickListener -> u
+    lhy.library.view.photoView.OnScaleChangedListener mScaleChangeListener -> v
+    lhy.library.view.photoView.PhotoViewAttacher$FlingRunnable mCurrentFlingRunnable -> y
+    android.graphics.Matrix mBaseMatrix -> k
+    android.graphics.Matrix mSuppMatrix -> m
+    android.view.animation.Interpolator mInterpolator -> a
+    float DEFAULT_MIN_SCALE -> G
+    int DEFAULT_ZOOM_DURATION -> H
+    float DEFAULT_MAX_SCALE -> E
+    float mMidScale -> d
+    lhy.library.view.photoView.OnPhotoTapListener mPhotoTapListener -> q
+    float mBaseRotation -> A
+    lhy.library.view.photoView.OnGestureListener onGestureListener -> D
+    lhy.library.view.photoView.OnSingleFlingListener mSingleFlingListener -> w
+    android.widget.ImageView mImageView -> h
+    android.view.GestureDetector mGestureDetector -> i
+    int mScrollEdge -> z
+    boolean mBlockParentIntercept -> g
+    boolean mZoomEnabled -> B
+    float[] mMatrixValues -> o
+    44:53:void <clinit>() -> <clinit>
+    55:260:void <init>(android.widget.ImageView) -> <init>
+    41:41:lhy.library.view.photoView.CustomGestureDetector access$000(lhy.library.view.photoView.PhotoViewAttacher) -> a
+    41:41:int access$1000(lhy.library.view.photoView.PhotoViewAttacher,android.widget.ImageView) -> a
+    41:41:float access$1600() -> a
+    41:41:lhy.library.view.photoView.PhotoViewAttacher$FlingRunnable access$802(lhy.library.view.photoView.PhotoViewAttacher,lhy.library.view.photoView.PhotoViewAttacher$FlingRunnable) -> a
+    263:264:void setOnDoubleTapListener(android.view.GestureDetector$OnDoubleTapListener) -> a
+    267:268:void setOnScaleChangeListener(lhy.library.view.photoView.OnScaleChangedListener) -> a
+    271:272:void setOnSingleFlingListener(lhy.library.view.photoView.OnSingleFlingListener) -> a
+    409:410:void setAllowParentInterceptOnEdge(boolean) -> a
+    423:425:void setMaximumScale(float) -> a
+    435:436:void setOnLongClickListener(android.view.View$OnLongClickListener) -> a
+    439:440:void setOnClickListener(android.view.View$OnClickListener) -> a
+    443:444:void setOnMatrixChangeListener(lhy.library.view.photoView.OnMatrixChangedListener) -> a
+    447:448:void setOnPhotoTapListener(lhy.library.view.photoView.OnPhotoTapListener) -> a
+    451:452:void setOnOutsidePhotoTapListener(lhy.library.view.photoView.OnOutsidePhotoTapListener) -> a
+    455:456:void setOnViewTapListener(lhy.library.view.photoView.OnViewTapListener) -> a
+    459:460:void setOnViewDragListener(lhy.library.view.photoView.OnViewDragListener) -> a
+    467:471:void setScale(float,boolean) -> a
+    476:487:void setScale(float,float,float,boolean) -> a
+    499:503:void setScaleType(android.widget.ImageView$ScaleType) -> a
+    551:552:void setZoomTransitionDuration(int) -> a
+    562:563:float getValue(android.graphics.Matrix,int) -> a
+    604:611:android.graphics.RectF getDisplayRect(android.graphics.Matrix) -> a
+    620:681:void updateBaseMatrix(android.graphics.drawable.Drawable) -> a
+    746:746:int getImageViewHeight(android.widget.ImageView) -> a
+    41:41:lhy.library.view.photoView.OnViewDragListener access$100(lhy.library.view.photoView.PhotoViewAttacher) -> b
+    41:41:int access$1700() -> b
+    41:41:int access$900(lhy.library.view.photoView.PhotoViewAttacher,android.widget.ImageView) -> b
+    418:420:void setMediumScale(float) -> b
+    510:512:void setZoomable(boolean) -> b
+    577:586:void setImageViewMatrix(android.graphics.Matrix) -> b
+    742:742:int getImageViewWidth(android.widget.ImageView) -> b
+    41:41:float access$1100(lhy.library.view.photoView.PhotoViewAttacher) -> c
+    413:415:void setMinimumScale(float) -> c
+    750:754:void cancelFling() -> c
+    41:41:float access$1200(lhy.library.view.photoView.PhotoViewAttacher) -> d
+    312:314:void setRotationBy(float) -> d
+    592:595:void checkAndDisplayMatrix() -> d
+    41:41:lhy.library.view.photoView.OnScaleChangedListener access$1300(lhy.library.view.photoView.PhotoViewAttacher) -> e
+    307:309:void setRotationTo(float) -> e
+    685:738:boolean checkMatrixBounds() -> e
+    41:41:android.view.View$OnLongClickListener access$1400(lhy.library.view.photoView.PhotoViewAttacher) -> f
+    280:281:android.graphics.RectF getDisplayRect() -> f
+    463:464:void setScale(float) -> f
+    41:41:lhy.library.view.photoView.OnSingleFlingListener access$1500(lhy.library.view.photoView.PhotoViewAttacher) -> g
+    541:543:android.graphics.Matrix getDrawMatrix() -> g
+    41:41:android.view.View$OnClickListener access$1800(lhy.library.view.photoView.PhotoViewAttacher) -> h
+    547:547:android.graphics.Matrix getImageMatrix() -> h
+    41:41:lhy.library.view.photoView.OnViewTapListener access$1900(lhy.library.view.photoView.PhotoViewAttacher) -> i
+    325:325:float getMaximumScale() -> i
+    41:41:android.graphics.Matrix access$200(lhy.library.view.photoView.PhotoViewAttacher) -> j
+    321:321:float getMediumScale() -> j
+    41:41:lhy.library.view.photoView.OnPhotoTapListener access$2000(lhy.library.view.photoView.PhotoViewAttacher) -> k
+    317:317:float getMinimumScale() -> k
+    41:41:lhy.library.view.photoView.OnOutsidePhotoTapListener access$2100(lhy.library.view.photoView.PhotoViewAttacher) -> l
+    329:329:float getScale() -> l
+    41:41:lhy.library.view.photoView.OnGestureListener access$2200(lhy.library.view.photoView.PhotoViewAttacher) -> m
+    333:333:android.widget.ImageView$ScaleType getScaleType() -> m
+    41:41:int access$2300(lhy.library.view.photoView.PhotoViewAttacher) -> n
+    570:574:void resetMatrix() -> n
+    41:41:android.view.animation.Interpolator access$2400(lhy.library.view.photoView.PhotoViewAttacher) -> o
+    515:522:void update() -> o
+    339:342:void onLayoutChange(android.view.View,int,int,int,int,int,int,int,int) -> onLayoutChange
+    346:405:boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+    41:41:void access$300(lhy.library.view.photoView.PhotoViewAttacher) -> p
+    41:41:android.widget.ImageView access$400(lhy.library.view.photoView.PhotoViewAttacher) -> q
+    41:41:boolean access$500(lhy.library.view.photoView.PhotoViewAttacher) -> r
+    41:41:boolean access$600(lhy.library.view.photoView.PhotoViewAttacher) -> s
+    41:41:int access$700(lhy.library.view.photoView.PhotoViewAttacher) -> t
+    41:41:lhy.library.view.photoView.PhotoViewAttacher$FlingRunnable access$800(lhy.library.view.photoView.PhotoViewAttacher) -> u
+lhy.library.view.photoView.PhotoViewAttacher$1 -> d.k$a:
+    lhy.library.view.photoView.PhotoViewAttacher this$0 -> a
+    95:95:void <init>(lhy.library.view.photoView.PhotoViewAttacher) -> <init>
+    98:131:void onDrag(float,float) -> a
+    135:139:void onFling(float,float,float,float) -> a
+    143:150:void onScale(float,float,float) -> a
+lhy.library.view.photoView.PhotoViewAttacher$2 -> d.k$b:
+    lhy.library.view.photoView.PhotoViewAttacher this$0 -> a
+    167:167:void <init>(lhy.library.view.photoView.PhotoViewAttacher) -> <init>
+    180:192:boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onFling
+    172:175:void onLongPress(android.view.MotionEvent) -> onLongPress
+lhy.library.view.photoView.PhotoViewAttacher$3 -> d.k$c:
+    lhy.library.view.photoView.PhotoViewAttacher this$0 -> a
+    196:196:void <init>(lhy.library.view.photoView.PhotoViewAttacher) -> <init>
+    236:251:boolean onDoubleTap(android.view.MotionEvent) -> onDoubleTap
+    257:257:boolean onDoubleTapEvent(android.view.MotionEvent) -> onDoubleTapEvent
+    199:230:boolean onSingleTapConfirmed(android.view.MotionEvent) -> onSingleTapConfirmed
+lhy.library.view.photoView.PhotoViewAttacher$4 -> d.k$d:
+    int[] $SwitchMap$android$widget$ImageView$ScaleType -> a
+    658:658:void <clinit>() -> <clinit>
+lhy.library.view.photoView.PhotoViewAttacher$AnimatedZoomRunnable -> d.k$e:
+    float mZoomEnd -> e
+    float mZoomStart -> d
+    float mFocalY -> b
+    float mFocalX -> a
+    long mStartTime -> c
+    lhy.library.view.photoView.PhotoViewAttacher this$0 -> f
+    763:769:void <init>(lhy.library.view.photoView.PhotoViewAttacher,float,float,float,float) -> <init>
+    787:790:float interpolate() -> a
+    774:784:void run() -> run
+lhy.library.view.photoView.PhotoViewAttacher$FlingRunnable -> d.k$f:
+    android.widget.OverScroller mScroller -> a
+    lhy.library.view.photoView.PhotoViewAttacher this$0 -> d
+    int mCurrentX -> b
+    int mCurrentY -> c
+    799:801:void <init>(lhy.library.view.photoView.PhotoViewAttacher,android.content.Context) -> <init>
+    804:805:void cancelFling() -> a
+    809:840:void fling(int,int,int,int) -> a
+    844:862:void run() -> run
+lhy.library.view.photoView.Util -> d.l:
+    10:17:void checkZoomLevels(float,float,float) -> a
+    20:20:boolean hasDrawable(android.widget.ImageView) -> a
+    24:31:boolean isSupportedScaleType(android.widget.ImageView$ScaleType) -> a
+    35:35:int getPointerIndex(int) -> a
+lhy.library.view.photoView.Util$1 -> d.l$a:
+    int[] $SwitchMap$android$widget$ImageView$ScaleType -> a
+    27:27:void <clinit>() -> <clinit>

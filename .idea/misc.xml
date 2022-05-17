@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/drawable/ic_contact_mail_black_24dp.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/drawable/ic_more_vert_black_24dp.xml" value="0.1135" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/drawable/ic_music_note_black_24dp.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/drawable/ic_ondemand_video_black_24dp.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/drawable/tab_text_color.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/drawable/tab_text_drawable.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/layout/activity_video_play.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/layout/fragment_chat.xml" value="0.11367753623188406" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/layout/fragment_dashboard.xml" value="0.11367753623188406" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/layout/fragment_home.xml" value="0.1375" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/layout/fragment_me.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/layout/fragment_music.xml" value="0.11367753623188406" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/layout/fragment_video.xml" value="0.11367753623188406" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/layout/item_music.xml" value="0.16666666666666666" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/layout/item_video.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/layout/view_empty.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/layout/view_error.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/layout/view_loading.xml" value="0.11820652173913043" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/menu/menu_main.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/app/src/main/res/menu/menu_nav.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/lhylibrary/src/main/res/drawable/layer_bg_progress.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/lhylibrary/src/main/res/drawable/overlay_bg.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/lhylibrary/src/main/res/drawable/selector_btn.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/lhylibrary/src/main/res/drawable/shap_btn_normal.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/lhylibrary/src/main/res/drawable/shap_btn_pressed.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/lhylibrary/src/main/res/drawable/shape_circle_corner_graylight.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/lhylibrary/src/main/res/drawable/shape_circle_corner_white.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/lhylibrary/src/main/res/drawable/shape_corner__top_white.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/lhylibrary/src/main/res/layout/dialog_loading.xml" value="0.12552083333333333" />
+        <entry key="..\:/android_project/newJelly/jelly/lhylibrary/src/main/res/layout/item_select.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/lhylibrary/src/main/res/layout/layout_tab.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/lhylibrary/src/main/res/layout/layout_tab_left.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/lhylibrary/src/main/res/layout/layout_tab_right.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/lhylibrary/src/main/res/layout/layout_tab_segment.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/lhylibrary/src/main/res/layout/layout_tab_top.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/lhylibrary/src/main/res/layout/toolbar.xml" value="0.10416666666666667" />
+        <entry key="..\:/android_project/newJelly/jelly/lhylibrary/src/main/res/layout/view_listview.xml" value="0.1" />
+        <entry key="..\:/android_project/newJelly/jelly/lhylibrary/src/main/res/layout/view_textview.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

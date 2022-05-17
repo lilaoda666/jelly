@@ -1,0 +1,7 @@
+R_DEF: Internal format may change without notice
+local
+drawable common_ic_back
+id common_ibtn_back
+layout common_activity_qr_code_scan
+string common_toast_camera_permission_failed
+string common_toast_qr_code_error

@@ -1,0 +1,5 @@
+int drawable common_ic_back 0x0
+int id common_ibtn_back 0x0
+int layout common_activity_qr_code_scan 0x0
+int string common_toast_camera_permission_failed 0x0
+int string common_toast_qr_code_error 0x0
