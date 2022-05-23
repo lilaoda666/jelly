@@ -9,8 +9,8 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="75dp"
+        android:background="?attr/colorPrimary"
         android:paddingTop="25dp"
-        android:background="@color/white"
         android:theme="@style/toolbar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
@@ -21,28 +21,20 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:text="音乐"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="17sp" />
     </androidx.appcompat.widget.Toolbar>
 
-    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
         android:id="@+id/refreshLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:srlEnablePreviewInEditMode="true">
-
-        <com.scwang.smartrefresh.layout.header.ClassicsHeader
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rlv_music"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
 </LinearLayout>

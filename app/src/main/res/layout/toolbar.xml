@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="?attr/colorPrimary"
+        app:navigationIcon="@drawable/common_ic_back"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
         <TextView
             android:id="@+id/text_title"
@@ -20,7 +21,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_gravity="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             tools:text="title"
             android:textSize="17sp"/>
     </androidx.appcompat.widget.Toolbar>

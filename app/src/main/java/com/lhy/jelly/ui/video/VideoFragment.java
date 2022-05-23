@@ -1,8 +1,14 @@
 package com.lhy.jelly.ui.video;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.service.media.MediaBrowserService;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,7 +24,9 @@ import com.lhy.jelly.bean.VideoBean;
 import com.lhy.jelly.databinding.FragmentVideoBinding;
 import com.lhy.jelly.utils.RxUtils;
 import com.lhy.jelly.utils.VideoUtils;
-import com.scwang.smartrefresh.layout.SmartRefreshLayout;
+
+import com.orhanobut.logger.Logger;
+import com.scwang.smart.refresh.layout.SmartRefreshLayout;
 import com.tbruyelle.rxpermissions3.RxPermissions;
 
 
@@ -53,6 +61,7 @@ public class VideoFragment extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = FragmentVideoBinding.inflate(inflater);
         initView();
+        discoverBrowseableMediaApps(getContext());
         return binding.getRoot();
     }
 
@@ -95,14 +104,14 @@ public class VideoFragment extends BaseFragment {
     private void initView() {
         rlvVideo = binding.rlvVideo;
         refreshLayout = binding.refreshLayout;
-        rlvVideo.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.VERTICAL,false));
+        rlvVideo.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
         mVideoAdapter = new VideoAdapter();
         rlvVideo.setAdapter(mVideoAdapter);
         mVideoAdapter.setOnItemClickListener((adapter, view, position)
                 -> {
             VideoBean item = mVideoAdapter.getItem(position);
             Intent intent = new Intent(getActivity(), VideoPlayerActivity.class);
-            intent.putExtra("url",item.getPath());
+            intent.putExtra("url", item.getPath());
             startActivity(intent);
         });
         refreshLayout.setEnableRefresh(true);
@@ -118,5 +127,21 @@ public class VideoFragment extends BaseFragment {
         super.onDestroyView();
         binding = null;
     }
+    private void discoverBrowseableMediaApps(Context context) {
+        PackageManager packageManager = context.getPackageManager();
+        Intent intent = new Intent(MediaBrowserService.SERVICE_INTERFACE);
+        List<ResolveInfo> services = packageManager.queryIntentServices(intent, 0);
+        for (ResolveInfo resolveInfo : services) {
+            if (resolveInfo.serviceInfo != null && resolveInfo.serviceInfo.applicationInfo != null) {
 
+                ApplicationInfo applicationInfo = resolveInfo.serviceInfo.applicationInfo;
+                String label = (String) packageManager.getApplicationLabel(applicationInfo);
+                Drawable icon = packageManager.getApplicationIcon(applicationInfo);
+                String className = resolveInfo.serviceInfo.name;
+                String packageName = resolveInfo.serviceInfo.packageName;
+                Logger.d(packageName+"  "+className);
+            }
+        }
+
+    }
 }

@@ -1,24 +1,18 @@
 package com.lhy.jelly.ui.home;
 
 import android.os.Bundle;
-import android.view.MenuItem;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.google.android.material.navigation.NavigationBarView;
-import com.google.android.material.navigation.NavigationView;
 import com.lhy.jelly.R;
 import com.lhy.jelly.base.BaseActivity;
 import com.lhy.jelly.constants.RouteConstants;
 import com.lhy.jelly.databinding.ActivityMainBinding;
+import com.lhy.jelly.service.MusicService2;
 import com.lhy.jelly.ui.chat.ChatFragment;
 import com.lhy.jelly.ui.mine.MineFragment;
 import com.lhy.jelly.ui.music.MusicFragment;
