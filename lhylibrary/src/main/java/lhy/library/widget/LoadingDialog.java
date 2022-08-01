@@ -38,4 +38,8 @@ public class LoadingDialog extends Dialog {
         window.setBackgroundDrawableResource(R.drawable.shape_corner_white);
         window.setAttributes(attributes);
     }
+
+    public void setMsg(String msg){
+
+    }
 }

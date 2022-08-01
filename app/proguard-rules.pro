@@ -19,4 +19,19 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+# OpenIM
+-keep class io.openim.**{*;}
+-keep class open_im_sdk.**{*;}
+-keep class open_im_sdk_callback.**{*;}
+
+# wechat
+-keep class com.tencent.mm.opensdk.** {
+    *;
+}
+-keep class com.tencent.wxop.** {
+    *;
+}
+-keep class com.tencent.mm.sdk.** {
+    *;
+}
 

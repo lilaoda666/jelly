@@ -20,8 +20,13 @@ public class BaseApplication extends LhyApplication {
         return BuildConfig.DEBUG;
     }
 
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        ImLiveData.getInstance().init();
+    }
+
     static {
-        //设置全局的Header构建器
         SmartRefreshLayout.setDefaultRefreshHeaderCreator((context, layout) -> {
 //            layout.setPrimaryColorsId(R.color.colorPrimary, R.color.colorPrimary);//全局设置主题颜色
             MaterialHeader materialHeader = new MaterialHeader(context);

@@ -27,6 +27,7 @@ public class HeadInterceptor implements Interceptor {
                 .addHeader("Connection", "keep-alive")
                 .addHeader("Accept", "application/json")
                 .addHeader("token", "")
+                .addHeader("platform", "2")
                 .method(original.method(), original.body())
                 .build();
         return chain.proceed(request);

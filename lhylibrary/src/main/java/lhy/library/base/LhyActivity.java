@@ -19,8 +19,6 @@ import lhy.library.utils.StatusBarUtil;
 
 public abstract class LhyActivity extends AppCompatActivity {
 
-    private static Handler handler;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,13 +43,6 @@ public abstract class LhyActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-    }
-
-    protected final Handler getHandler() {
-        if (handler == null) {
-            handler = new Handler(getMainLooper());
-        }
-        return handler;
     }
 
     protected <T> AutoDisposeConverter<T> autoDispose() {

@@ -6,24 +6,24 @@ package com.lhy.jelly.bean;
  */
 public class ApiResult<T> {
 
-    private String msg;
-    private int code; //1成功，0失败
+    private int status;
+    private String message;
     private T data;
 
-    public String getMsg() {
-        return msg;
+    public int getStatus() {
+        return status;
     }
 
-    public void setMsg(String msg) {
-        this.msg = msg;
+    public void setStatus(int status) {
+        this.status = status;
     }
 
-    public int getCode() {
-        return code;
+    public String getMessage() {
+        return message;
     }
 
-    public void setCode(int code) {
-        this.code = code;
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     public T getData() {

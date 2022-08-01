@@ -6,6 +6,8 @@ import androidx.annotation.Nullable;
 
 import com.bumptech.glide.Glide;
 import com.chad.library.adapter.base.BaseQuickAdapter;
+
+
 import com.chad.library.adapter.base.viewholder.BaseViewHolder;
 import com.lhy.jelly.R;
 import com.lhy.jelly.bean.MusicBean;

@@ -5,24 +5,24 @@ import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory;
 import retrofit2.converter.fastjson.FastJsonConverterFactory;
 
 
-public class HttpManager {
+public class LhyManager {
 
-    private static HttpManager instance = null;
+    private static LhyManager instance = null;
 
     private final Retrofit.Builder mRetrofitBuilder;
 
-    private HttpManager() {
+    private LhyManager() {
         mRetrofitBuilder = new Retrofit.Builder()
                 .addConverterFactory(FastJsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
                 .client(OkHttpManager.getInstance().getHttp());
     }
 
-    public static HttpManager getInstance() {
+    public static LhyManager getInstance() {
         if (instance == null) {
-            synchronized (HttpManager.class) {
+            synchronized (LhyManager.class) {
                 if (instance == null) {
-                    instance = new HttpManager();
+                    instance = new LhyManager();
                 }
             }
         }

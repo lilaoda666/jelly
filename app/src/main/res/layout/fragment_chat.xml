@@ -2,27 +2,46 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rlv_chat"
         android:layout_width="match_parent"
-        android:layout_height="45dp">
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="jelly" />
-    </androidx.appcompat.widget.Toolbar>
-
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
+    <LinearLayout
+        android:id="@+id/inputGroup"
         android:layout_width="match_parent"
-        android:layout_height="45dp" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#E8F2FF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:maxHeight="80dp"
+            android:minHeight="32dp"
+            android:text="fdafdsfdsaf" />
+
+        <Button
+            android:id="@+id/send"
+            style="@style/btn_common"
+            android:layout_width="100dp"
+            android:text="send" />
+    </LinearLayout>
+
 </LinearLayout>

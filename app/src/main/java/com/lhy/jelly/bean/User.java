@@ -7,29 +7,16 @@ package com.lhy.jelly.bean;
 
 public class User {
 
-    private String name;
-    private int age;
     private String account;
-    private String password;
-    private String sex;
-    private String token;
+    private String name;
+    private String nickname;
+    private String faceURL;
+    private Integer gender;
     private String phone;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
+    private Integer birth;
+    private String email;
+    private String token;
+    private long id;
 
     public String getAccount() {
         return account;
@@ -39,20 +26,60 @@ public class User {
         this.account = account;
     }
 
-    public String getPassword() {
-        return password;
+    public String getName() {
+        return name;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getSex() {
-        return sex;
+    public String getNickname() {
+        return nickname;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public String getFaceURL() {
+        return faceURL;
+    }
+
+    public void setFaceURL(String faceURL) {
+        this.faceURL = faceURL;
+    }
+
+    public Integer getGender() {
+        return gender;
+    }
+
+    public void setGender(Integer gender) {
+        this.gender = gender;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public Integer getBirth() {
+        return birth;
+    }
+
+    public void setBirth(Integer birth) {
+        this.birth = birth;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getToken() {
@@ -63,11 +90,11 @@ public class User {
         this.token = token;
     }
 
-    public String getPhone() {
-        return phone;
+    public long getId() {
+        return id;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setId(long id) {
+        this.id = id;
     }
 }

@@ -8,6 +8,7 @@ import androidx.appcompat.widget.Toolbar;
 import com.lhy.jelly.R;
 
 import lhy.library.base.LhyActivity;
+import lhy.library.utils.StatusBarUtil;
 
 public abstract class BaseActivity extends LhyActivity {
 
@@ -28,4 +29,8 @@ public abstract class BaseActivity extends LhyActivity {
         });
     }
 
+    @Override
+    public void setStatusBar() {
+        StatusBarUtil.setTransparentForImageView(this);
+    }
 }

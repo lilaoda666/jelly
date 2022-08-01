@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData;
 
 import com.bumptech.glide.load.engine.Resource;
 import com.lhy.jelly.bean.ApiResult;
+import com.scwang.smart.refresh.layout.util.SmartUtil;
 
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
 import io.reactivex.rxjava3.core.Observable;
@@ -20,14 +21,11 @@ import lhy.library.http.exception.ApiException;
 public class RxUtils {
 
     public static <T> Observable<T> wrapHttp(Observable<ApiResult<T>> observable) {
-        return observable.map(new Function<ApiResult<T>, T>() {
-            @Override
-            public T apply(ApiResult<T> tApiResult) throws Exception {
-                if (tApiResult.getCode() != 1) {
-                    throw new ApiException(tApiResult.getMsg());
-                }
-                return tApiResult.getData();
+        return observable.map(tApiResult -> {
+            if (tApiResult.getStatus() != 1) {
+                throw new ApiException(tApiResult.getMessage());
             }
+            return tApiResult.getData();
         }).subscribeOn(Schedulers.io())
                 .unsubscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread());

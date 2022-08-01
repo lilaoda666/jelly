@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.google.android.material.appbar.AppBarLayout;
@@ -16,15 +15,13 @@ import com.lhy.jelly.databinding.FragmentMineBinding;
 import com.lhy.jelly.utils.RxUtils;
 import com.scwang.smart.refresh.layout.SmartRefreshLayout;
 import com.scwang.smart.refresh.layout.api.RefreshHeader;
-import com.scwang.smart.refresh.layout.api.RefreshLayout;
-import com.scwang.smart.refresh.layout.listener.OnRefreshListener;
 import com.scwang.smart.refresh.layout.simple.SimpleMultiListener;
 import com.scwang.smart.refresh.layout.util.SmartUtil;
 
 import java.util.concurrent.TimeUnit;
 
 import io.reactivex.rxjava3.core.Observable;
-import lhy.library.http.RxObserver;
+import lhy.library.http.AbsObserver;
 
 /**
  * Created by Liheyu on 2017/8/21.
@@ -78,7 +75,7 @@ public class MineFragment extends BaseFragment {
     private void doRefresh() {
         RxUtils.wrapRx(Observable.timer(1, TimeUnit.SECONDS))
                 .to(autoDispose())
-                .subscribe(new RxObserver<Long>() {
+                .subscribe(new AbsObserver<Long>() {
                     @Override
                     public void onSuccess(Long value) {
                         refreshView.finishRefresh(true);

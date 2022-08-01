@@ -34,9 +34,9 @@ public abstract class LhyFragment extends Fragment implements Injectable {
         if (savedInstanceState != null) {
             boolean isHidden = savedInstanceState.getBoolean(STATUS_IS_HIDDEN);
             if (isHidden) {
-                getFragmentManager().beginTransaction().hide(this).commit();
+                getParentFragmentManager().beginTransaction().hide(this).commit();
             } else {
-                getFragmentManager().beginTransaction().show(this).commit();
+                getParentFragmentManager().beginTransaction().show(this).commit();
             }
         }
     }

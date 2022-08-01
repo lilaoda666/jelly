@@ -9,7 +9,6 @@ import android.content.pm.ResolveInfo;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.service.media.MediaBrowserService;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,7 +33,7 @@ import java.util.List;
 
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.core.ObservableOnSubscribe;
-import lhy.library.http.RxObserver;
+import lhy.library.http.AbsObserver;
 import lhy.library.utils.ToastUtils;
 
 /**
@@ -86,7 +85,7 @@ public class VideoFragment extends BaseFragment {
             emitter.onNext(videoBeans);
         }))
                 .to(autoDispose())
-                .subscribe(new RxObserver<List<VideoBean>>() {
+                .subscribe(new AbsObserver<List<VideoBean>>() {
                     @Override
                     public void onSuccess(List<VideoBean> value) {
                         mVideoAdapter.setNewInstance(value);

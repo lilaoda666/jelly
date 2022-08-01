@@ -126,7 +126,9 @@ public class MusicPlayActivity extends BaseActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        mMediaBrowser.connect();
+        if(!mMediaBrowser.isConnected()){
+            mMediaBrowser.connect();
+        }
     }
 
     @Override
